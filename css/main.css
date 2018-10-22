@@ -697,14 +697,6 @@ body{
 		background-color: red;
 }
 
-
-
-
-
-
-
-
-
 /*catalog checkboxes start here*/
 .radio-field{
 	display: flex;
@@ -716,6 +708,8 @@ body{
 	border-radius: 20px;
 	box-sizing: border-box;
 }
+
+
 .fillings label{
 	position: relative;
 }
@@ -741,14 +735,14 @@ input[type="checkbox"]:checked + i:after{
 	padding: none;
 }
 .form-btn{
-
-	width: 140px;
+	width: 150px;
 	box-sizing: border-box;
 	background-color: transparent;
 	color: #fff;
 	border: 2px solid #fff;
 	border-radius: 30px;
 	height: 40px;
+	margin-top: 17px;
 
 }
 
