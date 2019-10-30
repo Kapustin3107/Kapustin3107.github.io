@@ -1,0 +1,34 @@
+//colos
+@base_color: #000;
+@light_color: #ffffff;
+@base_bg: #f7e296;
+@opacity: 0.8;
+
+
+//font
+@font_opensans: 'opensans','Arial',sans-serif;
+@font_gilroy: 'gilroy','Arial',sans-serif;
+
+//form
+@form_field_bg: #f2f2f2;
+
+//mixin 
+._trs(@prop: all, @dur: 0.5s, @anim: ease-in-out) {
+	transition: @prop @dur @anim;
+}
+._placeholder(@color: @base_color) {
+	&::-webkit-input-placeholder {color:@color}
+	&::-moz-placeholder          {color:@color}
+	&:-ms-input-placeholder      {color:@color}
+}
+
+._flex(@display:flex, @dir:row, @wrap: nowrap, @just:space-between, @align: stretch){
+	display: @display;
+	flex-flow: @dir @wrap;
+	justify-content: @just;
+	align-items: @align;
+}
+._alignY(@a: 50%, @b: -50%) {
+	top: @a;
+	transform: translateY(@b);
+}
