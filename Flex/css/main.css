@@ -228,7 +228,7 @@ body {
   padding: 50px;
   display: flex;
   flex-direction: column;
-  background-image: url("../../img/Rectangle-5.jpg");
+  background-image: url("../img/Rectangle-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   flex-basis: 33.333%;
