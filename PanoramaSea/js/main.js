@@ -9,22 +9,26 @@ function ibg(){
     
 ibg();
 
-
+//adaptive menu function
 $(document).ready(function(){
     $('.menu__btn').click(function(event){
         $('.header__list').addClass('active');
-        //$('body').addClass('lock');
+        $('body').addClass('lock');
     });
     $('.close__btn').click(function(event){
         $('.header__list').removeClass('active');
+        $('body').removeClass('lock');
+    });
+    $('.menu__item').click(function(event){
+        $('.header__list').removeClass('active');
+        $('body').toggleClass('lock');
     });
 });
-// $(document).ready(function(){
-//     $('.menu__item').click(function(event){
-//         $('body').removeClass('lock');
-//     });
-// });
+//adaptive menu function enвы
 
+
+
+//pop-up form function
 $(document).ready(function(){
     $('.header__booking').click(function(event){
         $('.header__form').addClass('pop');
@@ -35,8 +39,7 @@ $(document).ready(function(){
         $('.header__form').removeClass('pop');
     });
 });
-
-
+//pop-up form function
 
 
 
@@ -63,5 +66,7 @@ $(document).ready(function(){
 
 
 
-  //google maps api
- 
+
+
+
+  
