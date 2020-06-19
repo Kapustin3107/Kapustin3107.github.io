@@ -1,0 +1,74 @@
+@import "variables.scss";
+.features {
+  margin: 50px 0 100px 0;
+  &__title {
+    margin-bottom: 40px;
+    h3 {
+      font-size: 28px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 2;
+    }
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+.feature {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 80px 40px auto 60px;
+
+  &__icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:nth-child(1) .feature__icon {
+    background-color: rgb(231, 65, 147);
+    background-image: url(../images/svg/Phone.svg);
+  }
+  &:nth-child(2) .feature__icon {
+    background-color: rgb(8, 131, 225);
+    background-image: url(../images/svg/Diagramm.svg);
+  }
+  &:nth-child(3) .feature__icon {
+    background-color: rgb(107, 92, 230);
+    background-image: url(../images/svg/Lighting.svg);
+  }
+  &:nth-child(4) .feature__icon {
+    background-color: rgb(7, 184, 148);
+    background-image: url(../images/svg/Thumbup.svg);
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: light;
+  }
+  &__btn {
+    width: 150px;
+    align-self: center;
+    background-color: #fff;
+    border: 1px solid $btn-color;
+    color: $btn-color;
+    &:hover {
+      background-color: $btn-color;
+      color: #fff;
+    }
+  }
+}

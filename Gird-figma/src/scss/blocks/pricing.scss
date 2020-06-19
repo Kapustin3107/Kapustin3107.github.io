@@ -1,0 +1,105 @@
+@import "variables.scss";
+.pricing {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+
+    h2 {
+      font-size: 54px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    h4 {
+      font-size: 24px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    button {
+      border: none;
+      background-color: inherit;
+      font-weight: inherit;
+      cursor: pointer;
+      color: inherit;
+      &:first-child:before {
+      }
+      &.active {
+        color: $btn-color;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 800px) {
+      flex-flow: column;
+    }
+  }
+}
+.price {
+  flex-basis: 32%;
+  border-radius: 20px;
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-flow: column;
+  transition: all 0.25s;
+
+  &__type span {
+    color: $btn-color;
+    font-weight: bold;
+  }
+  &__amount {
+    margin-top: 20px;
+    p {
+      letter-spacing: 0.1em;
+    }
+    span {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  &__features {
+    margin: 20px 0;
+    li {
+      font-size: 16px;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: #ccc url("../images/svg/check.svg") no-repeat center;
+        &.yellow {
+          background-color: orange;
+        }
+        &.green {
+          background-color: lightgreen;
+        }
+      }
+    }
+  }
+  &__btn {
+    margin: auto auto 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+    color: $btn-color;
+    border: 1px solid $btn-color;
+    font-weight: bold;
+    width: 200px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &:hover {
+    box-shadow: -1px 17px 45px -28px rgba(0, 0, 0, 1);
+  }
+  @media (max-width: 728px) {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+}

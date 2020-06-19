@@ -1,0 +1,131 @@
+@import "blocks/variables.scss";
+.footer {
+  padding-bottom: 100px;
+  background: url("../images/svg/wave.svg") no-repeat bottom;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px auto;
+    @media (max-width: 800px) {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+    //& > * {
+    //  outline: 1px solid red;
+    //}
+  }
+  &__socials {
+  }
+  &__title {
+    display: block;
+    color: rgb(105, 105, 105);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+  &__email {
+    a {
+      font-size: 30px;
+      color: $link-color;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    @media (max-width: 800px) {
+      text-align: center;
+      a {
+        font-size: 24px;
+        margin-top: 30px;
+      }
+    }
+  }
+  &__form {
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    input,
+    textarea {
+      padding: 10px 15px;
+      border: none;
+      background-color: rgb(228, 228, 228);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    input {
+      flex-basis: 49%;
+    }
+    textarea {
+      flex-basis: 70%;
+    }
+    button {
+      align-self: flex-start;
+      padding: 20px 40px;
+      text-transform: uppercase;
+    }
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+}
+.socials__list {
+  display: flex;
+  li {
+    font-size: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    a {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      transition: all 0.25s;
+      &.facebook {
+        background: url("../images/svg/facebook.svg") no-repeat center;
+      }
+      &.linkedin {
+        background: url("../images/svg/linkedin.svg") no-repeat center;
+      }
+      &.slack {
+        background: url("../images/svg/slack.svg") no-repeat center;
+      }
+      &.twitter {
+        background: url("../images/svg/twitter.svg") no-repeat center;
+      }
+      &:hover {
+        background-color: rgb(241, 241, 131);
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    justify-content: space-around;
+  }
+}
+.info__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  li {
+    flex-basis: 33.333%;
+    a {
+      width: 100%;
+      height: 100%;
+      color: rgb(129, 129, 129);
+      padding: 10px 10px 10px 0;
+      transform: all 0.25s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    @media (max-width: 800px) {
+      flex-basis: 50%;
+      text-align: center;
+    }
+  }
+}
