@@ -807,7 +807,7 @@ img {
 }
 .feature:nth-child(2) .feature__icon {
   background-color: #0883e1;
-  background-image: url(../images/svg/Diagramm.svg);
+  background-image: url(../images/svg/diagramm.svg);
 }
 .feature:nth-child(3) .feature__icon {
   background-color: #6b5ce6;
