@@ -111,7 +111,9 @@
                         </button>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a class="menu__link" href="./">Головна</a>
+                                <a class="menu__link current__page" href="#"
+                                    >Головна</a
+                                >
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="about.html"
@@ -127,7 +129,9 @@
                                 <a class="menu__link" href="blog.html">Блог</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Контакти</a>
+                                <a class="menu__link" href="contacts.html"
+                                    >Контакти</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -141,203 +145,79 @@
                             <svg>
                                 <use xlink:href="#cart"></use>
                             </svg>
-                            <span>0</span>
+                            <span>1</span>
                         </a>
                         <div class="cart__popup">
                             <p>
-                                Всього
-                                <span class="cart__popup-total">1</span> товар у
-                                корзинi
+                                <span class="cart__popup-total"> 1 </span> товар
+                                на сумму
+                                <span class="cart__popup-price">99.00 </span
+                                >грн.
                             </p>
-                            <a href="cart.html" class="btn cart__popup-btn">
-                                Оформити
-                            </a>
+                            <a href="cart.html" class="btn cart__popup-btn"
+                                >Оформити</a
+                            >
                         </div>
                     </div>
                 </div>
             </nav>
 
             <main class="main">
-                <section class="item">
+                <section class="waranty">
                     <div class="container">
-                        <div class="item__wrapper">
-                            <div class="item__gallery">
-                                <div class="item__slider">
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-2.jpg"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="item__thumbnails">
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-2.jpg"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="waranty__wrapper">
+                            <div class="waranty__image ibg">
+                                <img src="img/about.jpg" alt="" />
                             </div>
-
-                            <div class="item__info">
-                                <h2 class="item__name">Product name</h2>
-                                <p class="item__description">
-                                    Lorem ipsum dolor, sit amet consectetur
-                                    adipisicing elit. Nulla aliquid sit ipsum
-                                    numquam? Voluptatem fugiat perspiciatis
-                                    suscipit dicta odit, repellat est, illo, rem
-                                    iure tempora laudantium libero iste harum
-                                    natus!
+                            <div class="waranty__text">
+                                <div class="section__title">
+                                    <h3>Lorem ipsum dolor sit.</h3>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Officia, et.
+                                    </p>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Distinctio unde odio harum
+                                    sit. Ad labore reprehenderit magni quia
+                                    accusamus incidunt aliquid adipisci,
+                                    consequatur voluptatum eveniet dignissimos
+                                    temporibus nobis obcaecati fugiat eum
+                                    distinctio hic? Sunt qui, commodi quaerat
+                                    exercitationem doloremque deserunt!
                                 </p>
-                                <ul class="item__features">
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                    <li>Виробник:<span>Китай</span></li>
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                </ul>
-                                <div class="item__price">
-                                    <p>Цiна:<span> 99.00 </span>грн.</p>
-                                </div>
-                                <div class="item__quantity">
-                                    <button class="item__delete">-</button>
-                                    <span class="item__number">1</span>
-                                    <button class="item__add">+</button>
-                                </div>
-                                <div class="item__buttons">
-                                    <button
-                                        type="button"
-                                        class="item__cart btn"
-                                    >
-                                        В кошик
-                                    </button>
-                                    <a type="button" class="item__purchase btn"
-                                        >Купити</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="up-sell">
-                    <div class="container">
-                        <div class="section__title">
-                            <h3>Також вам можуть сподобатись</h3>
-                            <p>Ми пiдiбрали для вас найкористнiшi товари</p>
-                        </div>
-                        <div class="up-sell__wrapper">
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Distinctio unde odio harum
+                                    sit. Ad labore reprehenderit magni quia
+                                    accusamus incidunt aliquid adipisci,
+                                    consequatur voluptatum eveniet dignissimos
+                                    temporibus nobis obcaecati fugiat eum
+                                    distinctio hic? Sunt qui, commodi quaerat
+                                    exercitationem doloremque deserunt!
+                                </p>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Distinctio unde odio harum
+                                    sit. Ad labore reprehenderit magni quia
+                                    accusamus incidunt aliquid adipisci,
+                                    consequatur voluptatum eveniet dignissimos
+                                    temporibus nobis obcaecati fugiat eum
+                                    distinctio hic? Sunt qui, commodi quaerat
+                                    exercitationem doloremque deserunt!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Distinctio unde odio harum
+                                    sit. Ad labore reprehenderit magni quia
+                                    accusamus incidunt aliquid adipisci,
+                                    consequatur voluptatum eveniet dignissimos
+                                    temporibus nobis obcaecati fugiat eum
+                                    distinctio hic? Sunt qui, commodi quaerat
+                                    exercitationem doloremque deserunt!
+                                </p>
                             </div>
                         </div>
                     </div>

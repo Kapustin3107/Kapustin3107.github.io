@@ -75,3 +75,21 @@ $(document).ready(function () {
     ],
   });
 });
+//item gallery preview
+$(document).ready(function () {
+  $(".item__slider").slick({
+    asNavFor: ".item__thumbnails",
+    fade: true,
+    arrows: false,
+    draggable: false,
+  });
+});
+$(document).ready(function () {
+  $(".item__thumbnails").slick({
+    arrows: false,
+    slidesToShow: 5,
+    asNavFor: ".item__slider",
+    focusOnSelect: true,
+    draggable: false,
+  });
+});

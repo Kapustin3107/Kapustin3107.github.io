@@ -1,0 +1,15 @@
+.cart-page__wrapper {
+  display: flex;
+}
+.cart-page__wrapper > * {
+  background-color: #fff;
+  min-height: 300px;
+}
+
+.purchase {
+  flex-basis: 60%;
+}
+
+.checkout {
+  flex-basis: 60%;
+}

@@ -111,7 +111,11 @@
                         </button>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a class="menu__link" href="./">Головна</a>
+                                <a
+                                    class="menu__link current__page"
+                                    href="index.html"
+                                    >Головна</a
+                                >
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="about.html"
@@ -127,7 +131,9 @@
                                 <a class="menu__link" href="blog.html">Блог</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Контакти</a>
+                                <a class="menu__link" href="contacts.html"
+                                    >Контакти</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -137,207 +143,139 @@
                         </form>
                     </div>
                     <div class="cart">
-                        <a href="cart.html" class="cart__link">
+                        <a href="#" class="cart__link">
                             <svg>
                                 <use xlink:href="#cart"></use>
                             </svg>
-                            <span>0</span>
+                            <span>1</span>
                         </a>
                         <div class="cart__popup">
                             <p>
-                                Всього
-                                <span class="cart__popup-total">1</span> товар у
-                                корзинi
+                                <span class="cart__popup-total"> 1 </span> товар
+                                на сумму
+                                <span class="cart__popup-price">99.00 </span
+                                >грн.
                             </p>
-                            <a href="cart.html" class="btn cart__popup-btn">
-                                Оформити
-                            </a>
+                            <a href="#" class="btn cart__popup-btn">Оформити</a>
                         </div>
                     </div>
                 </div>
             </nav>
 
             <main class="main">
-                <section class="item">
+                <section class="cart-page">
                     <div class="container">
-                        <div class="item__wrapper">
-                            <div class="item__gallery">
-                                <div class="item__slider">
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
+                        <div class="cart-page__header designator"></div>
+                        <div class="cart-page__wrapper">
+                            <div class="purchase">
+                                <div class="purchase__title">
+                                    <h4>Корзина</h4>
+                                </div>
+                                <ul class="purchase__list">
+                                    <li class="purchase__item">
+                                        <div class="purchase__icon">
                                             <img
                                                 src="img/product-2.jpg"
-                                                alt=""
+                                                alt="brand-1"
+                                                height="70"
                                             />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="item__thumbnails">
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-2.jpg"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item__info">
-                                <h2 class="item__name">Product name</h2>
-                                <p class="item__description">
-                                    Lorem ipsum dolor, sit amet consectetur
-                                    adipisicing elit. Nulla aliquid sit ipsum
-                                    numquam? Voluptatem fugiat perspiciatis
-                                    suscipit dicta odit, repellat est, illo, rem
-                                    iure tempora laudantium libero iste harum
-                                    natus!
-                                </p>
-                                <ul class="item__features">
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                    <li>Виробник:<span>Китай</span></li>
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                    <li>Матерiaл:<span>пластик</span></li>
+                                        </div>
+                                        <div class="purchase__name">
+                                            <h4>
+                                                Product name
+                                            </h4>
+                                        </div>
+                                        <div class="purchase__price">
+                                            <div class="purchase__counter">
+                                                <button class="purchase__btn">
+                                                    -
+                                                </button>
+                                                <span class="purchase__summ"
+                                                    >1</span
+                                                >
+                                                <button class="purchase__btn">
+                                                    +
+                                                </button>
+                                            </div>
+                                            <button
+                                                class="purchase__remove"
+                                                type="button"
+                                                id="purchase__remove"
+                                                title="Видалити товар"
+                                            ></button>
+                                            <p>99.00 <span>грн.</span></p>
+                                        </div>
+                                    </li>
                                 </ul>
-                                <div class="item__price">
-                                    <p>Цiна:<span> 99.00 </span>грн.</p>
-                                </div>
-                                <div class="item__quantity">
-                                    <button class="item__delete">-</button>
-                                    <span class="item__number">1</span>
-                                    <button class="item__add">+</button>
-                                </div>
-                                <div class="item__buttons">
-                                    <button
-                                        type="button"
-                                        class="item__cart btn"
+
+                                <div class="purchase__total">
+                                    <a class="backtomain" href="#"
+                                        >Продовжити шопiнг</a
                                     >
-                                        В кошик
-                                    </button>
-                                    <a type="button" class="item__purchase btn"
-                                        >Купити</a
+                                    <p>Всього: <span>99</span>грн.</p>
+                                </div>
+                            </div>
+                            <div class="checkout">
+                                <div class="checkout__info">
+                                    <h4 class="checkout__title">Iнформацiя</h4>
+                                    <form action="#" class="checkout__form">
+                                        <input
+                                            type="text"
+                                            class="checkout__name"
+                                            placeholder="Ваше iм'я"
+                                        />
+                                        <input
+                                            type="email"
+                                            class="checkout__email"
+                                            placeholder="example@gmail.com"
+                                        />
+                                    </form>
+                                    <p>або</p>
+                                    <a
+                                        href="login.html"
+                                        class="btn checkout__login"
+                                        >Вхiд</a
+                                    >
+                                    <a href="#" class="btn checkout__register"
+                                        >Реєстрація</a
                                     >
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="up-sell">
-                    <div class="container">
-                        <div class="section__title">
-                            <h3>Також вам можуть сподобатись</h3>
-                            <p>Ми пiдiбрали для вас найкористнiшi товари</p>
-                        </div>
-                        <div class="up-sell__wrapper">
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
+                                <div class="checkout__mathod payment">
+                                    <h4 class="payment__title">
+                                        Способи оплати
+                                    </h4>
+                                    <form action="#" class="payment__form">
+                                        <div class="payment__item">
+                                            <label for="visa"
+                                                ><input
+                                                    type="checkbox"
+                                                    id="visa"
+                                                    name="visa"
+                                                    class="visa"
+                                                />
+                                                <i></i>
+                                            </label>
+                                            <img
+                                                src="img/visa-logo.png"
+                                                alt="visa-logo"
+                                                width="40px"
+                                            />
+                                            <img
+                                                src="img/master-logo.png"
+                                                alt="visa-logo"
+                                                width="40px"
+                                            />
+                                            <img
+                                                src="img/amex-logo.png"
+                                                alt="visa-logo"
+                                                width="40px"
+                                            />
+                                        </div>
+                                    </form>
+                                    <a href="#" class="btn payment__btn"
+                                        >Сплатити</a
+                                    >
                                 </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
                             </div>
                         </div>
                     </div>

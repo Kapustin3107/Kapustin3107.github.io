@@ -111,7 +111,9 @@
                         </button>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a class="menu__link" href="./">Головна</a>
+                                <a class="menu__link" href="index.html"
+                                    >Головна</a
+                                >
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="about.html"
@@ -124,10 +126,16 @@
                                 >
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="blog.html">Блог</a>
+                                <a
+                                    class="menu__link current__page"
+                                    href="blog.html"
+                                    >Блог</a
+                                >
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Контакти</a>
+                                <a class="menu__link" href="contacts.html"
+                                    >Контакти</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -141,203 +149,111 @@
                             <svg>
                                 <use xlink:href="#cart"></use>
                             </svg>
-                            <span>0</span>
+                            <span>1</span>
                         </a>
                         <div class="cart__popup">
                             <p>
-                                Всього
-                                <span class="cart__popup-total">1</span> товар у
-                                корзинi
+                                <span class="cart__popup-total"> 1 </span> товар
+                                на сумму
+                                <span class="cart__popup-price">99.00 </span
+                                >грн.
                             </p>
-                            <a href="cart.html" class="btn cart__popup-btn">
-                                Оформити
-                            </a>
+                            <a href="cart.html" class="btn cart__popup-btn"
+                                >Оформити</a
+                            >
                         </div>
                     </div>
                 </div>
             </nav>
 
             <main class="main">
-                <section class="item">
+                <section class="blog">
                     <div class="container">
-                        <div class="item__wrapper">
-                            <div class="item__gallery">
-                                <div class="item__slider">
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-2.jpg"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
+                        <div class="blog__wrapper">
+                            <div class="blog__posts">
+                                <div class="post ibg">
+                                    <img src="img/slider-bg-3.jpg" alt="" />
+                                    <a href="#" class="post__link">
+                                        <h3>Article name</h3>
+                                        <p>
+                                            <time>31.07.2020</time> / posted by
+                                            <span>Admin</span> / коментарiв
+                                            <span>99</span>
+                                        </p>
+                                    </a>
                                 </div>
-
-                                <div class="item__thumbnails">
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-2.jpg"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
+                                <div class="post ibg">
+                                    <img src="img/slider-bg-3.jpg" alt="" />
+                                    <a href="#" class="post__link">
+                                        <h3>Article name</h3>
+                                        <p>
+                                            <time>31.07.2020</time> / posted by
+                                            <span>Admin</span> / коментарiв
+                                            <span>99</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="post ibg">
+                                    <img src="img/slider-bg-3.jpg" alt="" />
+                                    <a href="#" class="post__link">
+                                        <h3>Article name</h3>
+                                        <p>
+                                            <time>31.07.2020</time> / posted by
+                                            <span>Admin</span> / коментарiв
+                                            <span>99</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="post ibg">
+                                    <img src="img/slider-bg-3.jpg" alt="" />
+                                    <a href="#" class="post__link">
+                                        <h3>Article name</h3>
+                                        <p>
+                                            <time>31.07.2020</time> / posted by
+                                            <span>Admin</span> / коментарiв
+                                            <span>99</span>
+                                        </p>
+                                    </a>
                                 </div>
                             </div>
-
-                            <div class="item__info">
-                                <h2 class="item__name">Product name</h2>
-                                <p class="item__description">
-                                    Lorem ipsum dolor, sit amet consectetur
-                                    adipisicing elit. Nulla aliquid sit ipsum
-                                    numquam? Voluptatem fugiat perspiciatis
-                                    suscipit dicta odit, repellat est, illo, rem
-                                    iure tempora laudantium libero iste harum
-                                    natus!
-                                </p>
-                                <ul class="item__features">
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                    <li>Виробник:<span>Китай</span></li>
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                    <li>Матерiaл:<span>пластик</span></li>
+                            <div class="blog__filter filter">
+                                <form action="#" class="filter__search">
+                                    <input type="text" placeholder="пошук" />
+                                </form>
+                                <h4 class="filter__title">Категорii</h4>
+                                <ul class="filter__list">
+                                    <li class="filter__item">
+                                        <a class="filter__link" href="#"
+                                            >Всi статтi <span>99</span>
+                                        </a>
+                                    </li>
+                                    <li class="filter__item">
+                                        <a class="filter__link" href="#"
+                                            >Технологii <span>99</span>
+                                        </a>
+                                    </li>
+                                    <li class="filter__item">
+                                        <a class="filter__link" href="#"
+                                            >Аксесуари <span>99</span></a
+                                        >
+                                    </li>
+                                    <li class="filter__item">
+                                        <a class="filter__link" href="#"
+                                            >IT <span>99</span></a
+                                        >
+                                    </li>
+                                    <li class="filter__item">
+                                        <a class="filter__link" href="#"
+                                            >Мобiльнi пристроi
+                                            <span>99</span></a
+                                        >
+                                    </li>
+                                    <li class="filter__item">
+                                        <a class="filter__link" href="#"
+                                            >Iнше <span>99</span></a
+                                        >
+                                    </li>
                                 </ul>
-                                <div class="item__price">
-                                    <p>Цiна:<span> 99.00 </span>грн.</p>
-                                </div>
-                                <div class="item__quantity">
-                                    <button class="item__delete">-</button>
-                                    <span class="item__number">1</span>
-                                    <button class="item__add">+</button>
-                                </div>
-                                <div class="item__buttons">
-                                    <button
-                                        type="button"
-                                        class="item__cart btn"
-                                    >
-                                        В кошик
-                                    </button>
-                                    <a type="button" class="item__purchase btn"
-                                        >Купити</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="up-sell">
-                    <div class="container">
-                        <div class="section__title">
-                            <h3>Також вам можуть сподобатись</h3>
-                            <p>Ми пiдiбрали для вас найкористнiшi товари</p>
-                        </div>
-                        <div class="up-sell__wrapper">
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
                             </div>
                         </div>
                     </div>
@@ -491,7 +407,7 @@
                                 <li class="socials__item">
                                     <a href="#" class="socials__link">
                                         <svg>
-                                            <use xlink:href="#instagram"></use>
+                                            <use xlink:href="#twitter"></use>
                                         </svg>
                                     </a>
                                 </li>

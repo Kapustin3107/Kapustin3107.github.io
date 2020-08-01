@@ -127,7 +127,11 @@
                                 <a class="menu__link" href="blog.html">Блог</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Контакти</a>
+                                <a
+                                    class="menu__link current__page"
+                                    href="contacts.html"
+                                    >Контакти</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -141,206 +145,127 @@
                             <svg>
                                 <use xlink:href="#cart"></use>
                             </svg>
-                            <span>0</span>
+                            <span>1</span>
                         </a>
                         <div class="cart__popup">
                             <p>
-                                Всього
-                                <span class="cart__popup-total">1</span> товар у
-                                корзинi
+                                <span class="cart__popup-total"> 1 </span> товар
+                                на сумму
+                                <span class="cart__popup-price">99.00 </span
+                                >грн.
                             </p>
-                            <a href="cart.html" class="btn cart__popup-btn">
-                                Оформити
-                            </a>
+                            <a href="cart.html" class="btn cart__popup-btn"
+                                >Оформити</a
+                            >
                         </div>
                     </div>
                 </div>
             </nav>
 
-            <main class="main">
-                <section class="item">
+            <main>
+                <section class="touch">
                     <div class="container">
-                        <div class="item__wrapper">
-                            <div class="item__gallery">
-                                <div class="item__slider">
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-2.jpg"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
+                        <div class="section__title">
+                            <h3>Будь на зв'язку</h3>
+                            <p>Контактна iнформацiя</p>
+                        </div>
+                        <div class="touch__wrapper">
+                            <div class="touch__item">
+                                <div class="touch__img">
+                                    <svg>
+                                        <use xlink:href="#address"></use>
+                                    </svg>
                                 </div>
-
-                                <div class="item__thumbnails">
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-2.jpg"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-
-                                    <div class="item__slide">
-                                        <a>
-                                            <img
-                                                src="img/product-1.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item__info">
-                                <h2 class="item__name">Product name</h2>
-                                <p class="item__description">
-                                    Lorem ipsum dolor, sit amet consectetur
-                                    adipisicing elit. Nulla aliquid sit ipsum
-                                    numquam? Voluptatem fugiat perspiciatis
-                                    suscipit dicta odit, repellat est, illo, rem
-                                    iure tempora laudantium libero iste harum
-                                    natus!
+                                <h4>Адреса</h4>
+                                <p>
+                                    795 South Park Avenue, Door 6 Wonderland, CA
+                                    94107, Australia
                                 </p>
-                                <ul class="item__features">
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                    <li>Виробник:<span>Китай</span></li>
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                    <li>Матерiaл:<span>пластик</span></li>
-                                </ul>
-                                <div class="item__price">
-                                    <p>Цiна:<span> 99.00 </span>грн.</p>
+                            </div>
+                            <div class="touch__item">
+                                <div class="touch__img">
+                                    <svg>
+                                        <use xlink:href="#phone"></use>
+                                    </svg>
                                 </div>
-                                <div class="item__quantity">
-                                    <button class="item__delete">-</button>
-                                    <span class="item__number">1</span>
-                                    <button class="item__add">+</button>
+                                <h4>Телефон</h4>
+                                <p>+440 875369208 - Office</p>
+                                <p>+440 353363114 - Fax</p>
+                            </div>
+                            <div class="touch__item">
+                                <div class="touch__img">
+                                    <svg>
+                                        <use xlink:href="#mail"></use>
+                                    </svg>
                                 </div>
-                                <div class="item__buttons">
-                                    <button
-                                        type="button"
-                                        class="item__cart btn"
-                                    >
-                                        В кошик
-                                    </button>
-                                    <a type="button" class="item__purchase btn"
-                                        >Купити</a
-                                    >
+                                <h4>Email</h4>
+                                <p>support@sitename.com</p>
+                                <p>info@sitename.com</p>
+                            </div>
+                            <div class="touch__item">
+                                <div class="touch__img">
+                                    <svg>
+                                        <use xlink:href="#like"></use>
+                                    </svg>
                                 </div>
+                                <h4>Соц. мережi</h4>
+                                <p>
+                                    795 South Park Avenue, Door 6 Wonderland, CA
+                                    94107, Australia
+                                </p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="up-sell">
+                <section class="questions">
                     <div class="container">
                         <div class="section__title">
-                            <h3>Також вам можуть сподобатись</h3>
-                            <p>Ми пiдiбрали для вас найкористнiшi товари</p>
+                            <h3>Задай запитання</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Autem, voluptatem!
+                            </p>
                         </div>
-                        <div class="up-sell__wrapper">
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
+                        <div class="questions__form">
+                            <form action="#">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="questions__name"
+                                    placeholder="Ваше iм'я"
+                                />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="questions__id"
+                                    placeholder="Ваш email"
+                                />
+                                <input
+                                    type="phone"
+                                    name="phone"
+                                    id="questions__phone"
+                                    placeholder="Ваш телефон"
+                                />
+                                <textarea
+                                    name="text"
+                                    id="questions__text"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Напишiть ваше запитання"
+                                ></textarea>
+                                <button
+                                    class="btn questions__btn"
+                                    type="submit"
                                 >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
-                            <div class="products__item product">
-                                <div class="product__img">
-                                    <img src="img/cover-1.jpg" alt="1" />
-                                </div>
-                                <h3 class="product__name">Product name</h3>
-                                <span class="product__price">99.00</span>
-                                <a class="btn product__btn" href="product.html"
-                                    >Купити</a
-                                >
-                            </div>
+                                    Надiслати
+                                </button>
+                            </form>
                         </div>
                     </div>
+                </section>
+
+                <section class="map">
+                    <div class="map__wrapper"></div>
                 </section>
             </main>
 
