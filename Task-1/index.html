@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="css/normaliza.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+    <div class="container">
+        <div class="entry">
+            <div class="entry-title">
+                <span class="entry-title-logo"></span>
+                <h2>Login To Your Account / Register New</h2>
+            </div>
+            <div class="entry-body">
+                <form class="form form-login">
+                    <div class="form-head login-head">
+
+                    </div>
+                    <fieldset class="form-main">
+                        <div class="form-row">
+                            <input class="form-input login-input" type="text" id="login-name" placeholder="User Name" name="name">
+                            <span class="form-error hidden ">Please, enter your user-name/email</span>
+                        </div>
+                        <div class="form-row">
+                            <input class="form-input login-input" type="password" id="login-password" placeholder="Password" name="password">
+                            <span class="form-error hidden">Please, enter password</span>
+                        </div>
+                        <div class="form-row login-buttons">
+                            <div class="login-remember">
+                                <label class="remember" for="remember">
+                                    <input class="login-checkbox" id="remember" name="remember" type="checkbox"><i></i>Remember my password
+                                </label>
+                                <p class="remember-help">You no longer need to enter <br> a password every time you use the site</p>
+                            </div>
+                            <div class="form-submit login-submit">
+                                <button class="form-btn" type="submit">Login</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <form class="form form-registration">
+                    <div class="form-head">
+                        <span class="form-title">Register</span>
+                        <label class="form-label" for="registeration-email">Email</label>
+                    </div>
+                    <fieldset class="form-main">
+                        <div class="form-row">
+                            <input id="registeration-email" class="form-input registeration-input" type="email"  name="email">
+                            <span class="form-error hidden ">Please, enter your email</span>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label" for="registeration-name">User name</label>
+                            <input id="registeration-name" class="form-input registeration-input" type="text" name="name">
+                            <span class="form-error hidden ">Please, enter your user name</span>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label" for="registeration-password">Password</label>
+                            <input id="registeration-password" class="form-input registeration-input" type="password" name="password">
+                            <span class="form-error hidden ">Please, enter your password</span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-submit registration-submit">
+                                <button class="form-btn form-btn-registration" type="submit">Register</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
