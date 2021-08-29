@@ -1,0 +1,53 @@
+
+.choice-wrapper
+    padding: 30px 0
+
+.choice-title
+    padding: 5px 0 20px 0
+    text-align: center
+
+.choice-subtitle
+    margin-top: 10px
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+
+.choice-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+
+.choice-item
+    padding-top: 35px
+
+.item-choice
+    max-width: 300px
+    display: flex
+
+.item-choice-icon
+    padding: 0 22px 0 0
+
+.item-choice-content span
+    font-family: $title-font
+    font-size: 18px
+    line-height: 22px
+    color: $blue-text
+
+.item-choice-content p
+    font-size: 14px
+    line-height: 22px
+    margin-top: 10px
+
+@media(max-width: 768px)
+    .choice-subtitle
+        font-size: 12px
+    .item-choice
+        width: 50%
+
+@media(max-width: 576px)
+    .choice-wrapper
+        padding: 10px 0
+    .choice-list
+        padding-bottom: 50px
+    .item-choice
+        width: 100%

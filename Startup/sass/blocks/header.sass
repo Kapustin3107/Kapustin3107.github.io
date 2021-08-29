@@ -1,0 +1,174 @@
+.header
+    font-size: 12px
+.header-wrapper
+    padding: 79px 0 104px 0
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+.header-logo a
+    padding: 0 44px 0 0
+
+.header-btn
+    margin-left: 20px
+
+.menu
+    position: relative
+
+.menu-list
+    display: flex
+
+.menu-link
+    text-transform: uppercase
+    margin-right: 20px
+    letter-spacing: 2px
+    transition: color 0.3s
+
+.menu-link:hover
+    color: $purple-text-hover
+
+.menu-link:active
+    color: $purple-text-active
+
+.menu-close
+    display: none
+
+.header-buttons
+    margin-left: auto
+
+.burger
+    display: none
+
+.burger-btn
+    position: relative
+    width: 40px
+    height: 30px
+    background-color: transparent
+    font-size: 0px
+    border: none
+
+.burger-btn span
+    display: inline-block
+    position: relative
+    width: 100%
+    height: 2px
+    background-color: $orange-bg
+
+.burger-btn span:after, .burger-btn span:before
+    position: absolute
+    content: ""
+    left: 0
+    width: 100%
+    height: 2px
+    background-color: $orange-bg
+
+.burger-btn span:after
+    top: -10px
+
+.burger-btn span:before
+    bottom: -10px
+
+@media(max-width: 768px)
+
+    .header-wrapper
+        padding-top: 50px
+
+    .header-logo
+        padding-left: 20px
+
+    .header-menu
+        margin-left: auto
+
+    .header-buttons
+        padding: 20px 0
+        width: 100%
+        display: flex
+        justify-content: center
+
+    .header-buttons a
+        margin: 0 10px
+        font-size: 10px
+
+@media(max-width: 576px)
+
+    .header-wrapper
+        padding: 20px 0 20px 0
+        justify-content: space-between
+
+    .header-logo
+        order: 0
+        padding: 0
+
+    .header-logo a
+        padding: 0
+
+    .menu
+        position: absolute
+        top: 0
+        right: 0
+        width: 80%
+        height: 100%
+        background-color: #fff
+        transition: all 0.5s
+        transform: translateX(100%)
+
+    .menu.active
+        transform: translateX(0)
+
+    .menu-list
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    .menu-link
+        font-size: 18px
+        padding: 20px 0
+
+    .menu-close
+        display: inline-block
+        position: absolute
+        top: 40px
+        right: 30px
+
+    .close-btn
+        width: 30px
+        height: 30px
+        font-size: 0px
+        border: none
+        background-color: transparent
+
+    .close-btn span
+        position: repative
+        display: inline-block
+        width: 100%
+        height: 2px
+
+    .close-btn span:before, .close-btn span:after
+        position: absolute
+        content: ""
+        top: 0
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: $body-bg
+        transform: rotate(45deg)
+
+    .close-btn span:after
+        transform: rotate(-45deg)
+
+    .burger
+        margin: 0
+        order: 2
+        display: inline-block
+    .header-buttons
+        margin: 0
+        order: 1
+        width: auto
+
+@media(max-width: 351px)
+    .header-buttons
+        width: 100%
+        order: 3

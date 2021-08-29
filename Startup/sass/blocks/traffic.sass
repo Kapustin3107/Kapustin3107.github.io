@@ -1,0 +1,58 @@
+.traffic-wrapper
+    display: flex
+
+.traffic-info
+    width: 50%
+    padding: 200px 0 0 80px
+    display: flex
+    flex-direction: column
+
+.traffic-title
+    margin-bottom: 40px
+
+.traffic-subtitle
+    padding: 0 100px 0 0
+    margin-bottom: 53px
+
+.traffic-btn
+    width: 155px
+    height: 48px
+
+.traffic-chart
+    width: 50%
+    min-height: 700px
+    background-image: url("../svg/accending.svg"), url("../svg/Chart.svg"), url("../img/traffic.png"), url("../svg/dots.svg")
+    background-repeat: no-repeat, no-repeat
+    background-position: right 240px bottom 100px, top 160px left 60px, top 140px right 100px, bottom 150px right 50px
+
+@media(max-width: 992px)
+    .traffic-info
+        width: 70%
+        padding: 200px 0 0 40px
+    .traffic-subtitle
+        padding: 0 50px 0 0
+    .traffic-chart
+        background-image: url("../img/traffic-mobile.png")
+        background-position: center
+        background-size: contain
+
+@media(max-width: 768px)
+
+    .traffic-wrapper
+        flex-direction: column
+    .traffic-info, .traffic-chart
+        width: 100%
+    .traffic-info
+        align-items: center
+    .traffic-info
+        padding: 0
+    .traffic-title
+        margin-bottom: 20px
+    .traffic-title br
+        display: none
+    .traffic-subtitle
+        padding: 0
+        text-align: center
+    .traffic-chart
+        order: -1
+        min-height: 400px

@@ -1,0 +1,98 @@
+*
+    box-sizing: border-box
+
+html, body
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+    word-break: break-word
+    overflow-x: hidden
+
+h1, h2, h3, h4, ul, p
+    font-family: $title-font, 'Arial' sans-serif
+    margin: 0
+    padding: 0
+
+ul
+    list-style: none
+
+a
+    text-decoration: none
+    color: inherit
+
+.visually-hidden
+    position: absolute
+    clip: rect(0 0 0 0)
+    width: 1px
+    height: 1px
+    margin: -1px
+
+.page
+    position: relative
+    min-height: 600px
+    background: $body-bg linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%)
+    color: $purple-text
+    font-size: 14px
+    font-family: $body-font
+    font-weight: 400
+
+.container
+    margin: 0 auto
+    padding: 0 6px
+    max-width: $container-width
+    //outline: 1px solid tomato
+
+.btn
+    padding: 10px 0
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    min-width: 112px
+    font-size: 12px
+    font-weight: 400
+    line-height: 100%
+    text-transform: uppercase
+    border-radius: 3px
+    cursor: pointer
+    letter-spacing: 2px
+    transition: all 0.3s
+
+.btn-transparent
+    border: 1px solid $orange-bg
+    color: $orange-text
+
+.btn-transparent:hover
+    color: $white-text
+    border-color: $white-text
+
+.btn-transparent:active
+    color: $orange-text
+    border-color: $orange-text
+
+.btn-colored
+    background-color: $orange-bg
+    color: $white-text
+
+.btn-colored:hover
+    color: $black-text
+
+.btn-colored:active
+    color: $white-text
+
+.highlight
+    color: $orange-text
+.title-big
+    font-size: 42px
+    line-height: 50px
+    font-family: $title-font
+    color: $blue-text
+    font-weight: 600
+
+@media(max-width: 992px)
+    .title-big
+        font-size: 32px
+
+@media(max-width: 768px)
+    .title-big
+        font-size: 24px

@@ -1,0 +1,36 @@
+.partners-wrapper
+    padding: 20px 0
+.partners-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+.partners-item
+    width: calc(100% / 6)
+    display: flex
+    justify-content: center
+    align-items: center
+.partners-link
+    margin-bottom: 20px
+    display: inline-flex
+    justify-content: center
+    width: 100%
+    height: 100%
+.partners-link svg
+    transition: fill 0.3s
+.partners-link:hover svg
+    fill: #fff
+.partners-logo
+
+@media(max-width: 992px)
+    .partners-item
+        width: calc(100% / 3)
+
+@media(max-width: 768px)
+    .partners
+        padding: 40px 0
+    .partners-item
+        width: calc(100% / 2)
+
+@media(max-width: 576px)
+    .partners
+        padding: 20px 0

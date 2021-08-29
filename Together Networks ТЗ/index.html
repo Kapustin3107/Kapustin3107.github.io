@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarCompany</title>
+    <link rel="stylesheet" href="css/normaliza.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+    <section class="app">
+        <h1 class="visually-hidden">StarCompany</h1>
+        <div class="container page-wrapper">
+            <header class="app-header header">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="Logo" width="234" height="64" loading="lazy">
+                    </a>
+                </div>
+                <div class="header-login login">
+                    <button class="login-btn login-start btn" type="button">Log In</button>
+                    <form class="login-form" action="#" method="post">
+                        <div class="login-column">
+                            <label class="visually-hidden" for="email">Enter your email</label>
+                            <input class="login-input" type="text" id="email" name="email" placeholder="Email">
+                            <span class="login-error">Please enter a valid email address</span>
+                        </div>
+                        <div class="login-column">
+                            <label class="visually-hidden" for="password">Enter your password</label>
+                            <input class="login-input" type="text" id="password" name="password" placeholder="Password">
+                            <a class="login-restore" href="#">Forgot your password?</a>
+                        </div>
+                        <button class="login-btn btn btn-blue" type="submit">Log In</button>
+                    </form>
+                </div>
+            </header>
+            <div class="steps">
+                <h2 class="steps-title">Starcompany designs, manufactures and<span>Launches advanced rockets and spacecrafts</span></h2>
+                <div class="steps-wrapper" data-slide-index= "0">
+                    <form id="user-data" action="#" class="steps-form">
+                        <button class="steps-button-prev btn btn-unactive">Get back</button>
+                        <div class="steps-slider">
+                            <div class="steps-item step">
+                                <label for="form-profession" class="step-title">Who are you?</label>
+                                <span class="step-current">Engineer</span>
+                                <ul class="step-select">
+                                    <li class="step-option">Engineer</li>
+                                    <li class="step-option">Doctor</li>
+                                    <li class="step-option">Driver</li>
+                                    <li class="step-option">Teacher</li>
+                                    <li class="step-option">Coach</li>
+                                </ul>
+                                <select class="step-profession visually-hidden" name="profession" id="form-profession">
+                                    <option selected>Engineer</option>
+                                    <option>Doctor</option>
+                                    <option>Driver</option>
+                                    <option>Teacher</option>
+                                    <option>Coach</option>
+                                </select>
+                            </div>
+                            <div class="steps-item step">
+                                <label for="form-age" class="step-title">What is your age?</label>
+                                <span class="step-current">21</span>
+                                <ul class="step-select">
+                                    <li class="step-option">22</li>
+                                    <li class="step-option">23</li>
+                                    <li class="step-option">24</li>
+                                    <li class="step-option">25</li>
+                                    <li class="step-option">26</li>
+                                    <li class="step-option">27</li>
+                                    <li class="step-option">28</li>
+                                </ul>
+                                <select class="step-age visually-hidden" name="age" id="form-age">
+                                    <option selected>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                </select>
+                            </div>
+                            <div class="steps-item step">
+                                <label for="form-address" class="step-title">I am from</label>
+                                <input id="form-address" class="step-input" type="text" name="address" placeholder="New Roads, 70760">
+                                <div class="step-help">E.g.: New Roads or 70760 <br> We don’t use postal addresses to contact members directly!</div>
+                            </div>
+                            <div class="steps-item step">
+                                <label for="form-email" class="step-title">Your email adress</label>
+                                <input id="form-email" class="step-input" type="email" name="email" placeholder="Input your email">
+                                <span class="step-allert">Please enter a valid email address</span>
+                            </div>
+                            <div class="steps-item step">
+                                <label for="form-password" class="step-title">Create your password</label>
+                                <input id="form-password" class="step-input" type="password" name="address" placeholder="•••••••••••••••">
+                                <div class="step-help">By clicking the button above you agree to our Terms of Use
+                                    and Privacy Policy including use of cookies and to receive newsletters,
+                                    account updates and offers sent by StarCompany.</div>
+                            </div>
+                        </div>
+                        <button type="button" class="steps-button-next btn btn-blue">Next step</button>
+                        <button type="submit" class="steps-button-submit btn btn-blue">Start now</button>
+                        <ul class="steps-dots">
+                            <li class="dot current">1</li>
+                            <li class="dot">2</li>
+                            <li class="dot">3</li>
+                            <li class="dot">4</li>
+                            <li class="dot">5</li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
